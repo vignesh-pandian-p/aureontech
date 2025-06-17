@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUREON TECH - TRUST. DELIVER. LEAD.</title>
+    <meta name="description" content="AUREON TECH - Revolutionary IT solutions with cutting-edge technology stacks and innovative services">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/particles.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="custom-cursor"></div>
+    <div class="cursor-trail"></div>
+    
+    <!-- Matrix Background -->
+    <canvas id="matrix-bg" class="matrix-background"></canvas>
+    
+    <!-- Particle System -->
+    <canvas id="particle-system" class="particle-canvas"></canvas>
+    
+    <!-- Floating Navigation Orbs -->
+    <nav class="floating-nav" id="floating-nav">
+        <div class="nav-orb active" data-target="home">
+            <i class="fas fa-home"></i>
+            <span class="nav-tooltip">Home</span>
+        </div>
+        <div class="nav-orb" data-target="about">
+            <i class="fas fa-info-circle"></i>
+            <span class="nav-tooltip">About</span>
+        </div>
+        <div class="nav-orb" data-target="services">
+            <i class="fas fa-cogs"></i>
+            <span class="nav-tooltip">Services</span>
+        </div>
+        <div class="nav-orb" data-target="tech-stack">
+            <i class="fas fa-code"></i>
+            <span class="nav-tooltip">Tech Stack</span>
+        </div>
+        <div class="nav-orb" data-target="contact">
+            <i class="fas fa-envelope"></i>
+            <span class="nav-tooltip">Contact</span>
+        </div>
+    </nav>
+    
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="logo-container">
+                <div class="logo-hologram">
+                    <h1 class="logo-text">AUREON TECH</h1>
+                    <div class="hologram-effect"></div>
+                </div>
+            </div>
+            
+            <!-- Top Navigation Menu -->
+            <nav class="top-nav" id="top-nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active" data-target="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">About Us</a></li>
+                    <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                    <li><a href="#tech-stack" class="nav-link" data-target="tech-stack">Products</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Theme Toggle -->
+            <div class="theme-controls">
+                <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">
+                    <i class="fas fa-moon theme-icon"></i>
+                </button>
+            </div>
+            
+            <div class="mobile-menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation Overlay -->
+        <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+            <nav class="mobile-nav">
+                <ul class="mobile-nav-list">
+                    <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+                    <li><a href="#about" class="nav-link" data-target="about">About Us</a></li>
+                    <li><a href="#services" class="nav-link" data-target="services">Services</a></li>
+                    <li><a href="#tech-stack" class="nav-link" data-target="tech-stack">Products</a></li>
+                    <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <div class="logo-3d">
+                    <span class="logo-layer">AUREON</span>
+                    <span class="logo-layer">TECH</span>
+                </div>
+                <div class="slogan-container">
+                    <h2 class="slogan gradient-text" id="main-slogan">TRUST. DELIVER. LEAD.</h2>
+                    <div class="lightning-progress">
+                        <span class="lightning-text">LIGHTNING PROGRESS</span>
+                        <div class="lightning-effect"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-description">
+                <p class="typewriter-text" id="hero-description">
+                    Revolutionary IT solutions powered by cutting-edge technology and innovative thinking
+                </p>
+            </div>
+            
+            <div class="hero-cta">
+                <button class="cta-button holographic" id="explore-btn">
+                    <span class="btn-text">EXPLORE THE FUTURE</span>
+                    <div class="btn-hologram"></div>
+                </button>
+            </div>
+        </div>
+        
+        <!-- 3D Geometric Shapes -->
+        <div class="geometric-shapes">
+            <div class="shape cube"></div>
+            <div class="shape pyramid"></div>
+            <div class="shape sphere"></div>
+            <div class="shape torus"></div>
+        </div>
+        
+        <!-- Floating Elements -->
+        <div class="floating-elements">
+            <div class="float-element" style="--delay: 0s; --duration: 6s;"></div>
+            <div class="float-element" style="--delay: 2s; --duration: 8s;"></div>
+            <div class="float-element" style="--delay: 4s; --duration: 7s;"></div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title morphing-title">About AUREON TECH</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <div class="text-block fade-in-up">
+                        <h3 class="gradient-text-secondary">Innovation at Its Core</h3>
+                        <p>AUREON TECH represents the pinnacle of technological advancement in the IT industry. We are a revolutionary company that combines cutting-edge technology stacks with unparalleled service delivery.</p>
+                    </div>
+                    
+                    <div class="text-block fade-in-up" style="--delay: 0.2s;">
+                        <h3 class="gradient-text-secondary">Our Mission</h3>
+                        <p>To deliver lightning-fast progress through innovative solutions, establishing trust through excellence, and leading the industry into the future of technology.</p>
+                    </div>
+                    
+                    <div class="text-block fade-in-up" style="--delay: 0.4s;">
+                        <h3 class="gradient-text-secondary">Why Choose Us</h3>
+                        <p>We don't just provide services; we craft experiences. Our holistic approach combines multiple technology stacks, ensuring comprehensive solutions for every client need.</p>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="holographic-panel">
+                        <div class="panel-content">
+                            <div class="stats-grid">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="500">0</div>
+                                    <div class="stat-label">Projects Completed</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="50">0</div>
+                                    <div class="stat-label">Technology Stacks</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="100">0</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                    <span class="stat-percent">%</span>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-target="24">0</div>
+                                    <div class="stat-label">Hours Support</div>
+                                    <span class="stat-suffix">/7</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title morphing-title">Our Services</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card holographic-card" data-service="web-dev">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3 class="service-title">Web Development</h3>
+                        <p class="service-description">Full-stack web development with modern frameworks</p>
+                    </div>
+                    <div class="card-back">
+                        <h4>Technology Stack</h4>
+                        <ul class="tech-list">
+                            <li>React.js / Vue.js / Angular</li>
+                            <li>Node.js / Django / Laravel</li>
+                            <li>HTML5, CSS3, JavaScript</li>
+                            <li>Responsive Design</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="service-card holographic-card" data-service="mobile-dev">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="service-title">Mobile Development</h3>
+                        <p class="service-description">Native and cross-platform mobile applications</p>
+                    </div>
+                    <div class="card-back">
+                        <h4>Technology Stack</h4>
+                        <ul class="tech-list">
+                            <li>React Native / Flutter</li>
+                            <li>iOS (Swift) / Android (Kotlin)</li>
+                            <li>Progressive Web Apps</li>
+                            <li>Cross-platform Solutions</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="service-card holographic-card" data-service="cloud">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3 class="service-title">Cloud Solutions</h3>
+                        <p class="service-description">Scalable cloud infrastructure and deployment</p>
+                    </div>
+                    <div class="card-back">
+                        <h4>Technology Stack</h4>
+                        <ul class="tech-list">
+                            <li>AWS / Azure / Google Cloud</li>
+                            <li>Docker / Kubernetes</li>
+                            <li>Microservices Architecture</li>
+                            <li>DevOps & CI/CD</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="service-card holographic-card" data-service="ai-ml">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="service-title">AI & Machine Learning</h3>
+                        <p class="service-description">Intelligent solutions powered by AI</p>
+                    </div>
+                    <div class="card-back">
+                        <h4>Technology Stack</h4>
+                        <ul class="tech-list">
+                            <li>Python / TensorFlow / PyTorch</li>
+                            <li>Natural Language Processing</li>
+                            <li>Computer Vision</li>
+                            <li>Deep Learning Models</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="service-card holographic-card" data-service="blockchain">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h3 class="service-title">Blockchain Development</h3>
+                        <p class="service-description">Decentralized applications and smart contracts</p>
+                    </div>
+                    <div class="card-back">
+                        <h4>Technology Stack</h4>
+                        <ul class="tech-list">
+                            <li>Ethereum / Solidity</li>
+                            <li>Web3.js / Smart Contracts</li>
+                            <li>DeFi Applications</li>
+                            <li>NFT Platforms</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+                
+                <div class="service-card holographic-card" data-service="cybersecurity">
+                    <div class="card-front">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="service-title">Cybersecurity</h3>
+                        <p class="service-description">Advanced security solutions and penetration testing</p>
+                    </div>
+                    <div class="card-back">
+                        <h4>Technology Stack</h4>
+                        <ul class="tech-list">
+                            <li>Ethical Hacking Tools</li>
+                            <li>Security Auditing</li>
+                            <li>Encryption & Authentication</li>
+                            <li>Threat Detection</li>
+                        </ul>
+                    </div>
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Technology Stack Section -->
+    <section class="tech-stack" id="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title morphing-title">Technology Solar System</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="solar-system">
+                <div class="sun">
+                    <div class="sun-core">
+                        <i class="fas fa-atom"></i>
+                        <span>CORE</span>
+                    </div>
+                </div>
+                
+                <!-- React Orbit -->
+                <div class="orbit orbit-1">
+                    <div class="planet react" data-tech="frontend">
+                        <i class="fab fa-react"></i>
+                        <span>React</span>
+                    </div>
+                </div>
+                
+                <!-- Node.js Orbit -->
+                <div class="orbit orbit-2">
+                    <div class="planet nodejs" data-tech="backend">
+                        <i class="fab fa-node-js"></i>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+                
+                <!-- Python Orbit -->
+                <div class="orbit orbit-3">
+                    <div class="planet python" data-tech="backend">
+                        <i class="fab fa-python"></i>
+                        <span>Python</span>
+                    </div>
+                </div>
+                
+                <!-- AWS Orbit -->
+                <div class="orbit orbit-4">
+                    <div class="planet aws" data-tech="cloud">
+                        <i class="fab fa-aws"></i>
+                        <span>AWS</span>
+                    </div>
+                </div>
+                
+                <!-- Docker Orbit -->
+                <div class="orbit orbit-5">
+                    <div class="planet docker" data-tech="cloud">
+                        <i class="fab fa-docker"></i>
+                        <span>Docker</span>
+                    </div>
+                </div>
+                
+                <!-- Angular Orbit -->
+                <div class="orbit orbit-6">
+                    <div class="planet angular" data-tech="frontend">
+                        <i class="fab fa-angular"></i>
+                        <span>Angular</span>
+                    </div>
+                </div>
+                
+                <!-- JavaScript Orbit -->
+                <div class="orbit orbit-7">
+                    <div class="planet javascript" data-tech="frontend">
+                        <i class="fab fa-js-square"></i>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+                
+                <!-- GitHub Orbit -->
+                <div class="orbit orbit-8">
+                    <div class="planet github" data-tech="tools">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tech Details Panel -->
+            <div class="tech-details" id="tech-details">
+                <div class="tech-panel">
+                    <h3 class="tech-category">Select a Technology</h3>
+                    <div class="tech-list-container">
+                        <div class="tech-grid" id="tech-grid">
+                            <p class="tech-placeholder">Hover over a planet to explore technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title morphing-title">Contact Us</h2>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Email</h4>
+                            <p>contact@aureontech.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h4>Address</h4>
+                            <p>Innovation District, Tech City</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form morphing-form" id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required>
+                            <label for="name">Your Name</label>
+                            <div class="form-bar"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required>
+                            <label for="email">Your Email</label>
+                            <div class="form-bar"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required>
+                            <label for="subject">Subject</label>
+                            <div class="form-bar"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                            <div class="form-bar"></div>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn holographic">
+                            <span class="btn-text">SEND MESSAGE</span>
+                            <div class="btn-hologram"></div>
+                        </button>
+                    </form>
+                    
+                    <div class="form-success" id="form-success">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>We'll get back to you within 24 hours.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3 class="gradient-text">AUREON TECH</h3>
+                    <p>TRUST. DELIVER. LEAD.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#services">Web Development</a></li>
+                            <li><a href="#services">Mobile Apps</a></li>
+                            <li><a href="#services">Cloud Solutions</a></li>
+                            <li><a href="#services">AI & ML</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Technologies</h4>
+                        <ul>
+                            <li><a href="#tech-stack">Frontend</a></li>
+                            <li><a href="#tech-stack">Backend</a></li>
+                            <li><a href="#tech-stack">Database</a></li>
+                            <li><a href="#tech-stack">Cloud</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="link-group">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="#" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 AUREON TECH. All rights reserved. | Lightning Progress in Innovation</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Audio Toggle -->
+    <div class="audio-toggle" id="audio-toggle">
+        <i class="fas fa-volume-up"></i>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="js/particles.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

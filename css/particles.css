@@ -1,0 +1,555 @@
+/* Particle System Styles */
+
+.particle-system {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.particle {
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+    animation: particleFloat 10s linear infinite;
+}
+
+.particle-small {
+    width: 2px;
+    height: 2px;
+    background: rgba(0, 255, 255, 0.8);
+    box-shadow: 0 0 6px rgba(0, 255, 255, 0.6);
+}
+
+.particle-medium {
+    width: 4px;
+    height: 4px;
+    background: rgba(157, 78, 221, 0.7);
+    box-shadow: 0 0 8px rgba(157, 78, 221, 0.5);
+}
+
+.particle-large {
+    width: 6px;
+    height: 6px;
+    background: rgba(255, 107, 53, 0.6);
+    box-shadow: 0 0 10px rgba(255, 107, 53, 0.4);
+}
+
+.particle-trail {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: rgba(0, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: trailFade 1s ease-out forwards;
+}
+
+/* Interactive Particles */
+.interactive-particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: rgba(0, 255, 255, 0.8);
+    border-radius: 50%;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.interactive-particle.attracted {
+    background: rgba(255, 107, 53, 1);
+    transform: scale(1.5);
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.8);
+}
+
+/* Connection Lines */
+.particle-connection {
+    position: absolute;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0.1), rgba(0, 255, 255, 0.3));
+    pointer-events: none;
+    animation: connectionPulse 2s ease-in-out infinite;
+}
+
+/* Constellation Effect */
+.constellation-point {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(0, 255, 255, 0.9);
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
+    animation: twinkle 3s ease-in-out infinite;
+}
+
+.constellation-line {
+    position: absolute;
+    height: 1px;
+    background: rgba(0, 255, 255, 0.4);
+    transform-origin: left center;
+    animation: constellationGlow 4s ease-in-out infinite;
+}
+
+/* Energy Orbs */
+.energy-orb {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.8), rgba(0, 255, 255, 0.2));
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    animation: orbFloat 8s ease-in-out infinite;
+}
+
+.energy-orb.purple {
+    background: radial-gradient(circle, rgba(157, 78, 221, 0.8), rgba(157, 78, 221, 0.2));
+    box-shadow: 0 0 20px rgba(157, 78, 221, 0.6);
+}
+
+.energy-orb.orange {
+    background: radial-gradient(circle, rgba(255, 107, 53, 0.8), rgba(255, 107, 53, 0.2));
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.6);
+}
+
+/* Matrix-style Digital Rain */
+.matrix-char {
+    position: absolute;
+    color: rgba(0, 255, 255, 0.8);
+    font-family: 'Courier New', monospace;
+    font-size: 12px;
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    animation: matrixFall 5s linear infinite;
+    pointer-events: none;
+}
+
+.matrix-char.fading {
+    animation: matrixFade 5s linear infinite;
+}
+
+/* Floating Code Fragments */
+.code-fragment {
+    position: absolute;
+    color: rgba(0, 255, 255, 0.6);
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    white-space: nowrap;
+    animation: codeFloat 12s linear infinite;
+    pointer-events: none;
+}
+
+.code-fragment.html {
+    color: rgba(255, 107, 53, 0.6);
+}
+
+.code-fragment.css {
+    color: rgba(157, 78, 221, 0.6);
+}
+
+.code-fragment.js {
+    color: rgba(255, 215, 0, 0.6);
+}
+
+/* Holographic Grid */
+.holo-grid {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        linear-gradient(rgba(0, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    animation: gridShift 20s linear infinite;
+    pointer-events: none;
+    z-index: -2;
+}
+
+/* Laser Scanlines */
+.scan-line {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(0, 255, 255, 0.8), transparent);
+    animation: scanlineMove 8s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.scan-line.vertical {
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg, transparent, rgba(0, 255, 255, 0.8), transparent);
+    animation: scanlineVertical 10s linear infinite;
+}
+
+/* Quantum Dots */
+.quantum-dot {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: rgba(0, 255, 255, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 4px rgba(0, 255, 255, 0.8);
+    animation: quantumFlicker 2s ease-in-out infinite;
+}
+
+.quantum-dot.phase-2 {
+    animation-delay: 0.5s;
+    background: rgba(157, 78, 221, 1);
+    box-shadow: 0 0 4px rgba(157, 78, 221, 0.8);
+}
+
+.quantum-dot.phase-3 {
+    animation-delay: 1s;
+    background: rgba(255, 107, 53, 1);
+    box-shadow: 0 0 4px rgba(255, 107, 53, 0.8);
+}
+
+/* Waveform Visualizer */
+.waveform {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.wave-bar {
+    display: inline-block;
+    width: 2px;
+    background: rgba(0, 255, 255, 0.6);
+    margin: 0 1px;
+    animation: waveAnimation 1s ease-in-out infinite;
+}
+
+/* Particle Explosion */
+.explosion-particle {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: rgba(255, 107, 53, 0.8);
+    border-radius: 50%;
+    animation: explode 1s ease-out forwards;
+}
+
+/* Magnetic Field Lines */
+.field-line {
+    position: absolute;
+    width: 1px;
+    background: rgba(0, 255, 255, 0.3);
+    transform-origin: bottom center;
+    animation: fieldOscillate 3s ease-in-out infinite;
+}
+
+/* Animations */
+@keyframes particleFloat {
+    0% {
+        transform: translateY(100vh) translateX(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(100px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes trailFade {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+@keyframes connectionPulse {
+    0%, 100% {
+        opacity: 0.3;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@keyframes twinkle {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes constellationGlow {
+    0%, 100% {
+        opacity: 0.2;
+        box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+    }
+    50% {
+        opacity: 0.6;
+        box-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
+    }
+}
+
+@keyframes orbFloat {
+    0%, 100% {
+        transform: translateY(0) translateX(0) scale(1);
+    }
+    25% {
+        transform: translateY(-30px) translateX(20px) scale(1.1);
+    }
+    50% {
+        transform: translateY(-60px) translateX(-10px) scale(0.9);
+    }
+    75% {
+        transform: translateY(-30px) translateX(-30px) scale(1.05);
+    }
+}
+
+@keyframes matrixFall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+@keyframes matrixFade {
+    0% {
+        opacity: 1;
+        color: rgba(0, 255, 255, 0.8);
+    }
+    50% {
+        opacity: 0.5;
+        color: rgba(0, 255, 255, 0.4);
+    }
+    100% {
+        opacity: 0.1;
+        color: rgba(0, 255, 255, 0.1);
+    }
+}
+
+@keyframes codeFloat {
+    0% {
+        transform: translateX(-100px) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(calc(100vw + 100px)) translateY(-50px) rotate(5deg);
+        opacity: 0;
+    }
+}
+
+@keyframes gridShift {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(50px, 50px);
+    }
+}
+
+@keyframes scanlineMove {
+    0% {
+        top: -2px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        top: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes scanlineVertical {
+    0% {
+        left: -2px;
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+@keyframes quantumFlicker {
+    0%, 100% {
+        opacity: 0.3;
+        transform: scale(1);
+    }
+    25% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    50% {
+        opacity: 0.1;
+        transform: scale(0.5);
+    }
+    75% {
+        opacity: 0.8;
+        transform: scale(1.2);
+    }
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        height: 10px;
+        opacity: 0.5;
+    }
+    50% {
+        height: 80px;
+        opacity: 1;
+    }
+}
+
+@keyframes explode {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0) translate(var(--dx, 0), var(--dy, 0));
+        opacity: 0;
+    }
+}
+
+@keyframes fieldOscillate {
+    0%, 100% {
+        transform: rotate(0deg) scaleY(1);
+        opacity: 0.3;
+    }
+    50% {
+        transform: rotate(15deg) scaleY(1.2);
+        opacity: 0.6;
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .particle-large {
+        width: 4px;
+        height: 4px;
+    }
+    
+    .particle-medium {
+        width: 3px;
+        height: 3px;
+    }
+    
+    .particle-small {
+        width: 1px;
+        height: 1px;
+    }
+    
+    .energy-orb {
+        width: 6px;
+        height: 6px;
+    }
+    
+    .matrix-char {
+        font-size: 10px;
+    }
+    
+    .code-fragment {
+        font-size: 8px;
+    }
+    
+    .holo-grid {
+        background-size: 30px 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .particle-large {
+        width: 3px;
+        height: 3px;
+    }
+    
+    .particle-medium {
+        width: 2px;
+        height: 2px;
+    }
+    
+    .energy-orb {
+        width: 4px;
+        height: 4px;
+    }
+    
+    .holo-grid {
+        background-size: 20px 20px;
+    }
+    
+    .waveform {
+        height: 50px;
+    }
+}
+
+/* Performance optimizations */
+.particle,
+.particle-trail,
+.interactive-particle,
+.energy-orb,
+.matrix-char,
+.code-fragment,
+.quantum-dot {
+    will-change: transform, opacity;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+}
+
+/* Reduce particles on low-end devices */
+@media (max-width: 480px) and (prefers-reduced-motion: no-preference) {
+    .particle:nth-child(n+20) {
+        display: none;
+    }
+    
+    .matrix-char:nth-child(n+10) {
+        display: none;
+    }
+    
+    .code-fragment:nth-child(n+5) {
+        display: none;
+    }
+}

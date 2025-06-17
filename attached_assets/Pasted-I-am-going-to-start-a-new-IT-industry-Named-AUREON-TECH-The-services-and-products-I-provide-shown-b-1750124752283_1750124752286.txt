@@ -1,0 +1,15 @@
+I am going to start a new IT industry Named AUREON-TECH
+The services and products I provide shown below 
+Technology Stacks in the IT Industry 1. Web Development Stacks Frontend: - HTML5, CSS3, JavaScript - Core technologies for building websites. - React.js, Vue.js, Angular - Popular frameworks/libraries for modern UI. - Tailwind, Bootstrap - CSS frameworks for design and layout. Backend: - Node.js, Express.js - JavaScript runtime and framework. - Django, Flask - Python-based web frameworks. - Spring Boot - Java enterprise framework. - Laravel - PHP backend framework. - Ruby on Rails - Full-stack Ruby framework. 2. Database Stacks SQL Databases: - MySQL, PostgreSQL, MS SQL Server, Oracle DB. NoSQL Databases: - MongoDB, Firebase, Cassandra, CouchDB. In-Memory: - Redis, Memcached. 3. Cloud Computing & DevOps Cloud: AWS, Azure, GCP, IBM Cloud. CI/CD: Jenkins, GitHub Actions, GitLab CI, CircleCI. Technology Stacks in the IT Industry Containers: Docker, Podman. Orchestration: Kubernetes, Docker Swarm. IaC: Terraform, Ansible, CloudFormation. Monitoring: Prometheus, Grafana, ELK Stack. 4. AI & Machine Learning Languages: Python, R, Julia. Frameworks: TensorFlow, PyTorch, Scikit-learn, Keras. Platforms: AWS SageMaker, Azure ML, Google AI. NLP/CV: HuggingFace, NLTK, OpenCV, YOLO, MediaPipe. 5. Mobile Development Native: Java/Kotlin (Android), Swift/Obj-C (iOS). Cross-platform: Flutter, React Native, Ionic, Xamarin. 6. Full Stack Examples MERN: MongoDB, Express, React, Node. MEAN: MongoDB, Express, Angular, Node. LAMP: Linux, Apache, MySQL, PHP. JAMstack: JavaScript, APIs, Markup. T3 Stack: TypeScript, Tailwind, tRPC, Next.js, Prisma. 7. Cybersecurity Tools Technology Stacks in the IT Industry Pentesting: Metasploit, Burp Suite, Nmap. Monitoring: Splunk, Wireshark, Snort. IAM: Okta, Keycloak, Vault. 8. Blockchain & Web3 Smart Contracts: Solidity, Rust. Platforms: Ethereum, Solana, Polygon. Dev Tools: Hardhat, Truffle, Remix, MetaMask. Storage: IPFS, Filecoin. 9. Data Engineering & Big Data Processing: Hadoop, Spark, Flink. ETL: Apache NiFi, Airflow. Lakes: S3, Azure Data Lake, BigLake. Warehouses: Snowflake, BigQuery, Redshift. 10. Other Emerging Areas IoT: Arduino, Raspberry Pi, MQTT, Node-RED. Edge: Azure IoT Edge, AWS Greengrass. AR/VR: Unity, Unreal, WebXR. Quantum: Qiskit, Cirq, Azure Quantum.
+
+Here's a professional prompt for your new IT industry, Aureon Tech, incorporating all your requirements:
+
+We are establishing a new IT company named Aureon Tech. We require a unique, elegant, stylish, simple, and modern, catchy website design.
+
+The website should primarily utilize the fonts Roboto, Open Sans, and Helvetica.
+
+Prominently displayed below the "Aureon Tech" logo, the slogan "TRUST. DELIVER. LEAD." should appear. Additionally, the phrase "LIGHTNING PROGRESS" needs to be clearly visible below this.
+
+Aureon Tech is a services and product-based company. All imagery used on the website must be unique and catchy, reflecting our innovative approach.
+
+The services and products we provide will be detailed separately.
